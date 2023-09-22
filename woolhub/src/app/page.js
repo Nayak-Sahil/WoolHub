@@ -13,13 +13,14 @@ export default function Home() {
     <>
       <Navbar/>
       <HeroMain />
-      <Services align="flex-row" type="market" img={marketTrend.src} title="Realtime Market Information" spanDescrp="Wool Market Insights:" descrp="Get real-time updates on wool prices, trends, and news to make informed decisions" btntxt="Explore More" />
+      <Services align="row" type="market" img={marketTrend.src} title="Realtime Market Information" spanDescrp="Wool Market Insights:" descrp="Get real-time updates on wool prices, trends, forecasting and news to make informed decisions" btntxt="Explore More" />
 
-      <Services align="flex-row-reverse" type="track" img={track.src} title="WoolWatch: Smart Wool Tracking" spanDescrp="Wool Tracking:" descrp="Experience full transparency in the journey of your wool, from farm shears to market shelves. Trace it all with WoolWatch" btntxt="Track My Wool" />
+      <Services align="row-reverse" type="track" img={track.src} title="WoolWatch: Smart Wool Tracking" spanDescrp="Wool Tracking:" descrp="Experience full transparency in the journey of your wool, from farm shears to market shelves. Trace it all with WoolWatch" btntxt="Track My Wool" moreDescrp="Know the origin, process, and journey of each strand. Trust in Every Thread: We're committed to showing you the real story behind your wool." spanMoreDescrp="Full Transparency:" />
 
-      <Services align="flex-row" type="warehouse" img={warehouse.src} title="Wool Storage and Warehousing" spanDescrp="Optimize Inventory:" descrp="Simplified and Effortless way for wool storage and wool inventory management to boost farm efficiency" btntxt="Get Started Now" />
+      <Services align="row" type="warehouse" img={warehouse.src} title="Wool Storage and Warehousing" spanDescrp="Optimize Inventory:" descrp="Simplified and Effortless way for wool storage and wool inventory management to boost farm efficiency" btntxt="Get Started Now" moreDescrp="With intuitive tools and a user-friendly interface, managing your wool inventory becomes a breeze." spanMoreDescrp="Effortless Inventory Management:"/>
 
-      <Services align="flex-row-reverse" type="marketplace" img={marketplace.src} title="Wool Tradomg and Marketplace" spanDescrp="Bridging the Wool Trade Gap: " descrp="Unlock a modern marketplace for wool producers to sell their products directly." btntxt="Join Now" />
+      <Services align="row-reverse" type="marketplace" img={marketplace.src} title="Wool Trading and Marketplace" spanDescrp="Bridging the Wool Trade Gap: " descrp="Unlock a modern marketplace for wool producers to sell their products directly." btntxt="Join Now" moreDescrp="Eliminating middlemen. Connect directly with your market.
+Modern Marketplace: A platform designed for today's digital age, ensuring ease of use and accessibility." spanMoreDescrp="Direct Transactions:" />
 
       <Contact />
     </>

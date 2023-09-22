@@ -13,8 +13,7 @@ export default function Navbar() {
                 <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
                     <a className="mr-10 text-primary cursor-pointer hover:text-gray-900">Home</a>
                     <a className="mr-10 text-primary cursor-pointer hover:text-gray-900">Services</a>
-                    <a className="mr-10 text-primary cursor-pointer hover:text-gray-900">About Us</a>
-                    <a className="mr-10 text-primary cursor-pointer hover:text-gray-900">Contact Us</a>
+                    <a className="mr-10 text-primary cursor-pointer hover:text-gray-900">Contact</a>
                 </nav>
                 <button className="inline-flex items-center bg-gray-100 border-0 py-2 px-5 focus:outline-none hover:bg-gray-200 rounded text-[#27272a] mt-4 md:mt-0">Let's Start</button>
             </div>
