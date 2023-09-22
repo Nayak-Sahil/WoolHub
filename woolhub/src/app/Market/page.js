@@ -12,6 +12,8 @@ import face3 from "../Market/images/face3.jpeg";
 import face4 from "../Market/images/face4.jpeg";
 import face5 from "../Market/images/face5.jpeg";
 import gifImage from "../Market/images/icons8-circled.gif";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faIndianRupeeSign } from "@fortawesome/free-solid-svg-icons";
 
 export default function page() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -41,7 +43,7 @@ export default function page() {
       <Header />
 
       {/* STATS DATA */}
-      <div class="flex flex-wrap gap-x-12 gap-y-12 px-4 ml-12 py-20 lg:px-20 sm:px-8">
+      <div class="flex align-center justify-center flex-wrap gap-x-12 gap-y-12 px-4 ml-12 py-20 lg:px-20 sm:px-8">
         <div class="flex w-72">
           <div class="flex w-full max-w-full flex-col break-words rounded-lg border border-gray-100 bg-white text-gray-600 shadow-lg">
             <div class="p-3">
@@ -125,7 +127,7 @@ export default function page() {
           <div class="flex w-full max-w-full flex-col break-words rounded-lg border border-gray-100 bg-white text-gray-600 shadow-lg">
             <div class="p-3">
               <div class="absolute -mt-10 h-16 w-16 rounded-xl bg-gradient-to-tr from-emerald-700 to-emerald-500 text-center text-white shadow-lg">
-                <svg
+              <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="mt-4 h-7 w-16"
                   fill="none"
@@ -136,7 +138,7 @@ export default function page() {
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
                   />
                 </svg>
               </div>
@@ -158,14 +160,14 @@ export default function page() {
         </div>
       </div>
 
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap justify-evenly px-20">
         {/* CHARTS */}
         <div className="lg:w-[600px] gap-5 ml-12">
           <LineChart />
         </div>
 
         {/* News Feed */}
-        <div class="mx-auto my-5 max-w-xs rounded-xl px-6 py-10 text-gray-600 shadow">
+        <div class="w-1/2 my-5 max-w-xs rounded-xl px-6 py-10 text-gray-600 shadow">
           <div class="mb-5 w-30 text-center rounded-md bg-blue-100 px-2 py-1 text-md font-medium text-blue-700">
             News Feed
           </div>
@@ -209,9 +211,11 @@ export default function page() {
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
+                class="mt-4 h-7 w-16"
+                fill="none"
                 viewBox="0 0 24 24"
-                fill="currentColor"
-                class="h-6 w-6"
+                stroke="currentColor"
+                stroke-width="2"
               >
                 <path
                   fill-rule="evenodd"

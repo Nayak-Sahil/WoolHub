@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { faChartSimple, faSquarePollVertical } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Link from 'next/link'
 
 export default function Services({ title, descrp, btntxt, spanDescrp, img, type, align, moreDescrp, spanMoreDescrp }) {
     return (
@@ -15,7 +16,7 @@ export default function Services({ title, descrp, btntxt, spanDescrp, img, type,
                     <p className="mb-8 leading-relaxed"><span className='text-primary'>{spanMoreDescrp}</span> {moreDescrp}</p>
 
                     {
-                        (type == "market") ? 
+                        (type == "Market") ? 
                         <div className='flex flex-col w-full h-max mt-1 mb-8 align-center justify-between flex-wrap'>
                             <div className="flex w-72 h-fit">
                                 <div className="flex w-full max-w-full flex-col break-words rounded-lg border border-gray-100 bg-white text-gray-600 shadow-md">
@@ -46,7 +47,9 @@ export default function Services({ title, descrp, btntxt, spanDescrp, img, type,
                         </div> : ""
                     }
                     <div className="flex justify-center">
+                        <Link href={`/${type}`}>
                         <button className="inline-flex text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg">{btntxt}</button>
+                        </Link>
                     </div>
                 </div>
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

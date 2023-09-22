@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Navbar/>
       <HeroMain />
-      <Services align="row" type="market" img={marketTrend.src} title="Realtime Market Information" spanDescrp="Wool Market Insights:" descrp="Get real-time updates on wool prices, trends, forecasting and news to make informed decisions" btntxt="Explore More" />
+      <Services align="row" type="Market" img={marketTrend.src} title="Realtime Market Information" spanDescrp="Wool Market Insights:" descrp="Get real-time updates on wool prices, trends, forecasting and news to make informed decisions" btntxt="Explore More" />
 
       <Services align="row-reverse" type="track" img={track.src} title="WoolWatch: Smart Wool Tracking" spanDescrp="Wool Tracking:" descrp="Experience full transparency in the journey of your wool, from farm shears to market shelves. Trace it all with WoolWatch" btntxt="Track My Wool" moreDescrp="Know the origin, process, and journey of each strand. Trust in Every Thread: We're committed to showing you the real story behind your wool." spanMoreDescrp="Full Transparency:" />
 
