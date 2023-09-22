@@ -23,6 +23,7 @@ const page = () => {
             img1: farmImg1.src,
             img2: farmImg2.src,
             img3: onlineEdu.src,
+            serviceTitle: "Unveiling the Roadmap from Farm to Market.",
             type: "Roadmap",
             serviceDetails: [
                 {
@@ -48,6 +49,7 @@ const page = () => {
             img1: farmImg1.src,
             img2: farmImg2.src,
             img3: farmImg3.src,
+            serviceTitle: "Growing Your Sheep Farm",
             type: "Vaccination",
             serviceDetails: [
                 {
@@ -76,6 +78,7 @@ const page = () => {
             img2: scheme2.src,
             img3: scheme3.src,
             type: "Schemes",
+            serviceTitle: "Unlocking Government Benefits and Schemes",
             serviceDetails: [
                 {
                     key: 1,
@@ -124,7 +127,7 @@ const ServiceComponents = ({ service, index }) => {
         <div className={`container px-10 py-10 mx-auto flex ${(index + 1) % 2 === 0 ? 'flex-row-reverse' : 'flex-row'} flex-wrap justify-between`}>
             <ETImage img1={service.img1} img2={service.img2} img3={service.img3} />
             <div className="flex flex-col align-center justify-center lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
-            <h1 className='relative -top-10 text-xl text-primary'>Sheep Farming</h1>
+            <h1 className='relative -top-10 text-xl text-primary'>{service.serviceTitle}</h1>
                 {
                     service.serviceDetails.map((item) => (
                         <RoadMapPoints
