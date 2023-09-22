@@ -3,15 +3,15 @@ import React from 'react'
 const SchemesVaccination = () => {
     return (
         <div className='mt-5 mr-10 w-full h-[680px] rounded-md shadow-innerlg overflow-y-scroll scroll'>
-            <header class="mx-auto max-w-screen-xl pt-28 text-center">
-                <p class="text-gray-500">Published April 4, 2022</p>
-                <h1 class="mt-2 text-3xl font-bold text-gray-900 sm:text-5xl">7 rules of effective marketing</h1>
-                <p class="mt-6 text-lg text-gray-700">You're doing marketing the wrong way</p>
-                <div class="mt-6 flex flex-wrap justify-center gap-2" aria-label="Tags">
-                    <button class="rounded-lg bg-gray-100 px-2 py-1 font-medium text-gray-600 hover:bg-gray-200">Marketing</button>
-                    <button class="rounded-lg bg-gray-100 px-2 py-1 font-medium text-gray-600 hover:bg-gray-200">Branding</button>
-                    <button class="rounded-lg bg-gray-100 px-2 py-1 font-medium text-gray-600 hover:bg-gray-200">Digital</button>
-                    <button class="rounded-lg bg-gray-100 px-2 py-1 font-medium text-gray-600 hover:bg-gray-200">Identity</button>
+            <header className="mx-auto max-w-screen-xl pt-28 text-center">
+                <p className="text-gray-500">Published on 21st September, 2023</p>
+                <h1 className="mt-2 text-3xl font-bold text-gray-900 sm:text-5xl">Optimizing Sheep Feeding for Premium Wool Production</h1>
+                <p className="mt-6 text-lg text-gray-700">You're feeding sheeps the wrong way</p>
+                <div className="mt-6 flex flex-wrap justify-center gap-2" aria-label="Tags">
+                    <button className="rounded-lg bg-gray-100 px-2 py-1 font-medium text-gray-600 hover:bg-gray-200">Wool Production</button>
+                    <button className="rounded-lg bg-gray-100 px-2 py-1 font-medium text-gray-600 hover:bg-gray-200">Sheep Farming</button>
+                    <button className="rounded-lg bg-gray-100 px-2 py-1 font-medium text-gray-600 hover:bg-gray-200">Feeding Sheep</button>
+                    <button className="rounded-lg bg-gray-100 px-2 py-1 font-medium text-gray-600 hover:bg-gray-200">Livestock Nutrition</button>
                 </div>
                 <img class="sm:h-[34rem] mt-10 w-full object-contain" src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Featured Image" />
             </header>

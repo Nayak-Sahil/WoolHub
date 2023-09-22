@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Remainder from "./Remainder"
 
 const Header = ({params}) => {
     return (
@@ -47,9 +48,13 @@ const Header = ({params}) => {
                 </li>
             </ol>
 
-            <button className={`bg-primary px-8 py-2 rounded-lg text-white hover:scale-95 hover:bg-[#0089ff] duration-75 font-extralight`}>
-                Set Reminder
-            </button>
+            {
+                params.servicename[0] === "Vaccination"
+                ?
+                <Remainder/>
+                :
+                ''
+            }
         </nav>
     )
 }

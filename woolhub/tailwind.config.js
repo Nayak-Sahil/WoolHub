@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const withMT = require("@material-tailwind/react/utils/withMT");
+module.exports = withMT({
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -12,7 +13,7 @@ module.exports = {
         'primary':'#2098ff'
       },
       boxShadow: {
-        'innerlg': 'inset 0px 60px 100px -78px rgba(184,255,247,1)',
+        'innerlg': 'inset 0px 20px 40px 0px rgba(235,235,235,1)',
         // -webkit-box-shadow: inset 0px 60px 100px -78px rgba(184,255,247,1);
         // -moz-box-shadow: inset 0px 60px 100px -78px rgba(184,255,247,1);
       },
@@ -44,4 +45,4 @@ module.exports = {
     },
   },
   plugins: [require('flowbite/plugin')],
-}
+})

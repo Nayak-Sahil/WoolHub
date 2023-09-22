@@ -43,7 +43,7 @@ const page = () => {
                 }
             ]
         },
-        
+
         /* second section data */
         {
             img1: farmImg1.src,
@@ -71,7 +71,7 @@ const page = () => {
                 }
             ]
         },
-        
+
         /* third section data */
         {
             img1: scheme1.src,
@@ -127,7 +127,7 @@ const ServiceComponents = ({ service, index }) => {
         <div className={`container px-10 py-10 mx-auto flex ${(index + 1) % 2 === 0 ? 'flex-row-reverse' : 'flex-row'} flex-wrap justify-between`}>
             <ETImage img1={service.img1} img2={service.img2} img3={service.img3} />
             <div className="flex flex-col align-center justify-center lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
-            <h1 className='relative -top-10 text-xl text-primary'>{service.serviceTitle}</h1>
+                <h1 className='relative -top-10 text-xl text-primary'>{service.serviceTitle}</h1>
                 {
                     service.serviceDetails.map((item) => (
                         <RoadMapPoints
@@ -136,12 +136,12 @@ const ServiceComponents = ({ service, index }) => {
                         />
                     ))
                 }
-            <div className='flex align-center justify-start w-full my-1 px-2'>
-                <Link href={`/Education/${service.type}`} class="bg-slate-900 text-white hover:bg-gray-800 text-gray-800 font-bold py-2 px-6 rounded inline-flex items-center justify-between rounded-full w-40">
-                    <span>Let's Start</span>
-                    <FontAwesomeIcon width={20} icon={faArrowRightLong} />
-                </Link>
-            </div>
+                <div className='flex align-center justify-start w-full my-1 px-2'>
+                    <Link href={`/Education/${service.type}`} class="bg-gray-800 text-white hover:bg-gray-800 text-gray-800 font-bold py-2 px-6 rounded inline-flex items-center justify-between rounded-full w-40">
+                        <span>Let's Start</span>
+                        <FontAwesomeIcon width={20} icon={faArrowRightLong} />
+                    </Link>
+                </div>
             </div>
         </div>
     )

@@ -2,9 +2,14 @@
 import { Sidebar } from 'flowbite-react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Suspense } from 'react';
+import { Suspense, useState } from 'react';
+import FAQModal from './FAQModal';
 
 export default function SideBar({ params, active }) {
+    const [open, setOpen] = useState(false);
+    const handleOpen = () =>{
+        setOpen(!open)
+    }
     const router = useRouter();
     const sections = {
         Roadmap: [
@@ -54,11 +59,14 @@ export default function SideBar({ params, active }) {
             </Sidebar.Items>
             <Sidebar.CTA className='p-0 hover:bg-neutral-100'>
                 <button
+                    onClick={handleOpen}
+                    data-modal-target="extralarge-modal" data-modal-toggle="extralarge-modal"
                     className="w-full h-12 text-center text-base flex items-center justify-center text-cyan-900 hover:text-cyan-800 hover:bg-[#eceef1] rounded-lg duration-100"
                 >
                     FAQ
                 </button>
             </Sidebar.CTA>
+            <FAQModal open={open} handleOpen={handleOpen}/>
         </Sidebar>
     )
 }

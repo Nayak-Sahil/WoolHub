@@ -7,7 +7,7 @@ import SchemesVaccination from "./components/SchemesVaccination"
 const page = ({ params }) => {
 
     return (
-        <main>
+        <main className="overflow-y-hidden hide-scroll-on-page h-screen">
             {
                 params.servicename[0] !== "Vaccination" && params.servicename[0] !== "Roadmap" && params.servicename[0] !== "Schemes" ?
                     <>
