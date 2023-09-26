@@ -1,8 +1,7 @@
 "use client"
 import React from 'react';
-import css from "/src/app/globals.css"
-import { Button } from '@material-tailwind/react';
 import productionImg from '../../../../../public/Assets/Images/Education/farmer1.jpg'
+import cardImg from '../../../../../public/Assets/Images/Education/card1.jpg'
 import Image from 'next/legacy/image';
 
 const RoadMap = () => {
@@ -56,15 +55,22 @@ const RoadMap = () => {
         </div> */}
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="mb-10 md:mb-16">
-            <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">From Fleece to Fortune</h2>
+            <h2 className="mb-2 text-center text-2xl font-bold text-gray-800 md:mb-4 lg:text-3xl">From Fleece to Fortune</h2>
 
             <p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">Your go-to resource for wool farming success. Discover essential tips and strategies, from sheep care to wool sales, in one concise guide.</p>
           </div>
 
-          <div className="flex flex-wrap gap-10">
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
+          <div className="flex flex-wrap gap-8 w-full">
+            <BlogCard 
+              img={productionImg}
+              title={"From Fleece to Fiber: The Art of Wool Production"}
+              desc={"Dive into the fascinating world of wool production and learn how this natural fiber is sourced, processed, and transformed into the cozy material we love."}
+            />
+            <BlogCard 
+              img={cardImg}
+              title={"Mastering the Shears: A Guide to Proper Wool Shearing"}
+              desc={"Join us as we explore the essential skill of wool shearing. This blog post provides an in-depth look at the art of safely and efficiently shearing sheep to harvest their precious wool."}
+            />
           </div>
         </div>
       </div>
@@ -74,24 +80,22 @@ const RoadMap = () => {
       export default RoadMap
 
 
-const BlogCard = () => {
+const BlogCard = ({title,desc,img}) => {
   return (
-      <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+      <div className="relative flex w-[350px] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
         <div className="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
           <Image
-            src={productionImg}
+            src={img}
             alt="img-blur-shadow"
             layout="fill"
           />
         </div>
         <div className="p-6">
           <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-            UI/UX Review Check
+            {title}
           </h5>
-          <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-            The place is close to Barceloneta Beach and bus stop just 2 min by walk
-            and near to "Naviglio" where you can enjoy the main night life in
-            Barcelona.
+          <p className="block h-24 font-sans text-base font-light leading-relaxed text-inherit antialiased">
+            {desc}
           </p>
         </div>
         <div className="p-6 pt-0">

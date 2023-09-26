@@ -16,17 +16,15 @@ const SchemesVaccination = () => {
                 <img class="sm:h-[34rem] mt-10 w-full object-contain" src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Featured Image" />
             </header>
             <div class="mx-auto mt-10 max-w-screen-md space-y-12 px-4 py-10 font-serif text-lg tracking-wide text-gray-700">
-                    <h1 class="text-3xl text-gray-800 font-semibold mb-4 mt-4">Uneasy barton seeing remark happen his has</h1>
-                    <strong class="text-xl text-left font-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime impedit ex consequatur nostrum cupiditate at sequi? Ipsam commodi modi officia mollitia doloribus tenetur consectetur quae?</strong>
-                    <h2 class="text-2xl text-gray-800 font-semibold mb-4 mt-4">Uneasy barton seeing remark happen his has</h2>
-                    <div class="border-l-4 border-gray-500 pl-4 mb-6 italic rounded">
-                        Sportsman do offending supported extremity breakfast by listening. Decisively advantages nor
-                        expression
-                        unpleasing she led met. Estate was tended ten boy nearer seemed. As so seeing latter he should thirty whence.
-                        Steepest speaking up attended it as. Made neat an on be gave show snug tore.
-                    </div>
-                    <strong class="text-xl text-left font-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime impedit ex consequatur nostrum cupiditate at sequi? Ipsam commodi modi officia mollitia doloribus tenetur consectetur quae?</strong>
+                <h1 class="text-3xl text-gray-800 font-semibold mb-4 mt-4">Introduction</h1>
+                <strong class="text-xl text-left font-medium">Sheep have been our companions in agriculture for thousands of years, providing us with wool for clothing, blankets, and more. To ensure the finest quality wool, it's essential to pay close attention to their diet. In this blog, we'll explore the critical role of sheep feeding in achieving premium wool production. So, let's dive into the world of nutrition, grazing, and the secrets to nurturing your flock for the softest, most luxurious wool.</strong>
+                <h2 class="text-2xl text-gray-800 font-semibold mb-4 mt-4">You Are What You Eat: Wool Edition</h2>
+                <strong class="text-xl text-left font-medium">Sheep have been our companions in agriculture for thousands of years, providing us with wool for clothing, blankets, and more. To ensure the finest quality wool, it's essential to pay close attention to their diet. In this blog, we'll explore the critical role of sheep feeding in achieving premium wool production. So, let's dive into the world of nutrition, grazing, and the secrets to nurturing your flock for the softest, most luxurious wool.</strong>
+                <div class="border-l-4 border-gray-500 pl-4 mb-6 italic rounded">
+                    Sheep are natural grazers, and the quality of their pasture significantly impacts wool production. Lush, diverse pastures provide the necessary nutrients for optimal wool growth. Rotational grazing ensures fresh, nutritious forage.
                 </div>
+                <strong class="text-xl text-left font-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime impedit ex consequatur nostrum cupiditate at sequi? Ipsam commodi modi officia mollitia doloribus tenetur consectetur quae?</strong>
+            </div>
         </div>
     )
 }
