@@ -13,7 +13,6 @@ import { useState } from "react";
 
 const Remainder = () => {
     const [open, setOpen] = useState(false);
-    const datepickerEl = document.getElementById('datepickerId');
     // Datepicker(datepickerEl,{
 
     // })

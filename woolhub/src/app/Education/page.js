@@ -137,7 +137,7 @@ const ServiceComponents = ({ service, index }) => {
                     ))
                 }
                 <div className='flex align-center justify-start w-full my-1 px-2'>
-                    <Link href={`/Education/${service.type}`} class="bg-gray-800 text-white hover:bg-gray-800 text-gray-800 font-bold py-2 px-6 rounded inline-flex items-center justify-between rounded-full w-40">
+                    <Link href={`/Education/${service.type}`} className="bg-gray-800 text-white hover:bg-gray-800 text-gray-800 font-bold py-2 px-6 rounded inline-flex items-center justify-between rounded-full w-40">
                         <span>Let's Start</span>
                         <FontAwesomeIcon width={20} icon={faArrowRightLong} />
                     </Link>

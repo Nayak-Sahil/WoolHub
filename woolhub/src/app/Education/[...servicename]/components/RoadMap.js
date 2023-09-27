@@ -2,11 +2,12 @@
 import React from 'react';
 import productionImg from '../../../../../public/Assets/Images/Education/farmer1.jpg'
 import cardImg from '../../../../../public/Assets/Images/Education/card1.jpg'
+import sortingCardImg from '../../../../../public/Assets/Images/Education/sortingCardImg.jpg'
 import Image from 'next/legacy/image';
 
 const RoadMap = () => {
   return (
-    <div className="bg-white py-6 sm:py-8 lg:py-12 overflow-y-scroll max-h-screen no-scrollbar w-full">
+    <div className="bg-white py-6 sm:py-8 overflow-y-scroll max-h-screen no-scrollbar w-full">
         {/* <div className='w-full relative'>
         <input id="steps-range" type="range" min="0" max="5" step="1" className="w-full h-[8px] bg-gray-200 rounded-3xl appearance-none cursor-pointer z-20 outline-none" defaultValue={0}></input>
         <div className='block'>
@@ -54,13 +55,13 @@ const RoadMap = () => {
           
         </div> */}
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-          <div className="mb-10 md:mb-16">
+          <div className="mb-10 md:mb-8">
             <h2 className="mb-2 text-center text-2xl font-bold text-gray-800 md:mb-4 lg:text-3xl">From Fleece to Fortune</h2>
 
-            <p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">Your go-to resource for wool farming success. Discover essential tips and strategies, from sheep care to wool sales, in one concise guide.</p>
+            <p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg lg:text-base">Your go-to resource for wool farming success. Discover essential tips and strategies, from sheep care to wool sales, in one concise guide.</p>
           </div>
 
-          <div className="flex flex-wrap gap-8 w-full">
+          <div className="flex flex-wrap gap-8 w-full mb-32">
             <BlogCard 
               img={productionImg}
               title={"From Fleece to Fiber: The Art of Wool Production"}
@@ -71,18 +72,23 @@ const RoadMap = () => {
               title={"Mastering the Shears: A Guide to Proper Wool Shearing"}
               desc={"Join us as we explore the essential skill of wool shearing. This blog post provides an in-depth look at the art of safely and efficiently shearing sheep to harvest their precious wool."}
             />
+            <BlogCard 
+              img={sortingCardImg}
+              title={"Wool Sorting Secrets: Ensuring Quality Assurance in Your Fiber"}
+              desc={"Quality assurance is paramount in the world of wool, and in this blog post, we unravel the intricacies of wool sorting. Discover the criteria and techniques used to classify wool based on its fiber characteristics, ensuring that only the finest wool makes it to the market. Explore how proper sorting contributes to superior textile products and sustainability."}
+            />
           </div>
         </div>
       </div>
       )
 }
 
-      export default RoadMap
+export default RoadMap
 
 
 const BlogCard = ({title,desc,img}) => {
   return (
-      <div className="relative flex w-[350px] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+      <div className="relative flex w-[350px] flex-col my-4 rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
         <div className="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
           <Image
             src={img}
@@ -94,7 +100,7 @@ const BlogCard = ({title,desc,img}) => {
           <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
             {title}
           </h5>
-          <p className="block h-24 font-sans text-base font-light leading-relaxed text-inherit antialiased">
+          <p className="get_line_clamp_3 w-full h-20 font-sans text-base font-light leading-relaxed text-inherit antialiased">
             {desc}
           </p>
         </div>

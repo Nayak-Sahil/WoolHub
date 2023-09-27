@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import PageNotFound from "@/app/components/PageNotFound"
 import RoadMap from "./components/RoadMap"
 import SchemesVaccination from "./components/SchemesVaccination"
+import GovernmentSchemes from "./components/GovernmentSchemes"
 
 const page = ({ params }) => {
 
@@ -23,7 +24,12 @@ const page = ({ params }) => {
 
                                     <RoadMap />
                                     :
-                                    <SchemesVaccination />
+                                    (
+                                        params.servicename[0] === "Vaccination"?
+                                        <SchemesVaccination />
+                                        :
+                                        <GovernmentSchemes />
+                                    )
                             }
                         </main>
 
