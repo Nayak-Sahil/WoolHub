@@ -10,7 +10,8 @@ module.exports = withMT({
   theme: {
     extend: {
       colors:{
-        'primary':'#2098ff'
+        'primary':'#2098ff',
+        'secondary': '#232b2e'
       },
       boxShadow: {
         'innerlg': 'inset 0px 20px 40px 0px rgba(235,235,235,1)',

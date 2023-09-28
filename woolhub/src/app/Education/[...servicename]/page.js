@@ -4,10 +4,13 @@ import PageNotFound from "@/app/components/PageNotFound"
 import RoadMap from "./components/RoadMap"
 import SchemesVaccination from "./components/SchemesVaccination"
 import GovernmentSchemes from "./components/GovernmentSchemes"
+import Navbar from "@/app/components/landing/Navbar"
 
 const page = ({ params }) => {
 
     return (
+        <>
+        <Navbar title="Wool Education" params={params} />
         <main className="overflow-y-hidden hide-scroll-on-page h-screen">
             {
                 params.servicename[0] !== "Vaccination" && params.servicename[0] !== "Roadmap" && params.servicename[0] !== "Schemes" ?
@@ -36,6 +39,7 @@ const page = ({ params }) => {
                     </>
             }
         </main>
+        </>
     )
 }
 

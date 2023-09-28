@@ -47,14 +47,6 @@ const Header = ({params}) => {
                     </div>
                 </li>
             </ol>
-
-            {
-                params.servicename[0] === "Vaccination"
-                ?
-                <Remainder/>
-                :
-                ''
-            }
         </nav>
     )
 }
